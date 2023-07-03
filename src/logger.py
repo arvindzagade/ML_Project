@@ -1,9 +1,11 @@
+## Tracking our all logs to identify the issues
+
 import logging
 import os
 from datetime import datetime
 
 LOG_FILE = f"{datetime.now().strftime('%d_%m_%Y_%H_%M_%S')}.log"
-logs_path =os.path.join(os.getcwd(),"logs",LOG_FILE) # setting path for log file
+logs_path = os.path.join(os.getcwd(),"logs",LOG_FILE) # setting path for log file
 os.makedirs(logs_path,exist_ok=True)
 
 
