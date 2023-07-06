@@ -17,7 +17,7 @@ from xgboost import XGBRegressor
 from src.exception import CustomException
 from src.logger import logging
 
-from src.utils import save_object,evaluate_models
+from src.utils import save_object,evaluate_model
 
  ## for every component we need to create a config file where we will pass input
 
@@ -63,7 +63,7 @@ class ModelTrainer:
             }
             
             ## Evaluate model function is written in utils.py 
-            model_report:dict=evaluate_models(X_train=X_train,y_train=y_train,X_test=X_test,y_test=y_test,
+            model_report:dict=evaluate_model(X_train=X_train,y_train=y_train,X_test=X_test,y_test=y_test,
                                              models=models)
 
             # To get best model score from dict
