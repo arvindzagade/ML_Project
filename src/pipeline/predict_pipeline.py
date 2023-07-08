@@ -15,7 +15,7 @@ class PredictPipeline:
             model_path=os.path.join("artifacts","model.pkl") # taking model.pkl for prediction
             preprocessor_path=os.path.join('artifacts','preprocessor.pkl') # preprocessor.pkl is doing scaler,tranformation etc
             print("Before Loading")
-            print(os.getcwd())
+            print(os.getcwd()) ## checking for current working
             model=load_object(file_path = model_path) # load object will load the pickle file, load_obj is in utils.py file
             preprocessor=load_object(file_path = preprocessor_path) # loading preprocessor pickle file
             print("After Loading")
