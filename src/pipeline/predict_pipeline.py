@@ -5,7 +5,7 @@ from src.exception import CustomException
 from src.utils import load_object
 
 
-class PredictPipline:
+class PredictPipeline:
     def __init__(self) -> None:
         pass
 
