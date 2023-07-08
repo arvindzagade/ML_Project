@@ -52,7 +52,7 @@ def predict_datapoint():
 
         results = predict_pipeline.predict(pred_df)
 
-        print(f"after Prediction the result is {results[0]}")
+        print(f"after Prediction the result is{results[0]}")
 
         return render_template('home.html',results=results[0])
     
